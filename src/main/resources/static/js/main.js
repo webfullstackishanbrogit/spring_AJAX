@@ -23,7 +23,14 @@ function fire_ajax_submit() {
         type: "POST",
         contentType: "application/json",
         url: "/api/search",
-        data: JSON.stringify(search),
+        data: JSON.stringify(search),/*var balance = $("#balance").val();
+                                       var pin = $("#pin").val();
+                                       var cardId = $("#cardId").val();
+                                       data: JSON.stringify({
+                                       "balance":balance,
+                                       "pin": pin,
+                                       "cardId": cardId
+                                       }), */
         dataType: 'json',
         cache: false,
         timeout: 600000,
